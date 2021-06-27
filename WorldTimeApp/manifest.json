@@ -1,6 +1,6 @@
 {
-    "name": "world_time_app",
-    "short_name": "world_time_app",
+    "name": "try1",
+    "short_name": "try1",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
