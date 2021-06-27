@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bien Unido Paradise</title>
+    <link rel="shortcut icon" type="image/x-icon" href="white-logo.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <!--cursor animation-->
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
+
+    <!--preloader-->
+    <div class="loading-screen">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script>
+        $(window).on("load", function() {
+            $(".loading-screen").fadeOut(100);
+        });
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="inner-width">
+            <a href="#" class="logo"></a>
+            <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+            <div class="navbar-menu">
+                <span class="search">
+                  <input type="text" placeholder="Search.." name="search" >
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </span>
+
+                <a href="#home">Home</a>
+                <a href="#about">About Bien Unido</a>
+                <a href="#resorts">Tourism</a>
+                <a href="#hotel">Where to stay?</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <ul class="flex-container">
+            <li class="flex-item">
+                <div class="info">
+                    <span class="logoheader ">Map & Seal of Bien Unido</span>
+                    <div class="leftpane">
+                        <img class="mylogo " src="images/white-logo.png " alt="logo ">
+                        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125663.02098331387!2d124.34115343097822!3d10.183139900594213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9fb1e546b770d%3A0xdfdef49f77d2a50e!2sBien%20Unido%2C%20Bohol!5e0!3m2!1sen!2sph!4v1586738081980!5m2!1sen!2sph"
+                            width="400" height="400" frameborder="0" style="border:0; border-radius: 20px;" allowfullscreen="true" aria-hidden="false" tabindex="0" alt="no connection"></iframe>
+
+                        <!--<img class="map " src="images/Map/location.png " alt=" ">-->
+                    </div>
+
+                </div>
+
+            </li>
+            <li class="flex-item ">
+
+                <div id="slideshow">
+                    <div>
+                        <div class="slideheader">Municipality of Bien Unido!</div>
+                        <div class="slideimage">
+                            <img src="images/town hall.png" alt="townhall.jpg">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slideheader">Island Hopping!</div>
+                        <div class="slideimage">
+                            <img src="images/tourist/island hopping 1.jpg" alt="townhall.jpg">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slideheader">Beautiful Sand Bar!</div>
+                        <div class="slideimage">
+                            <img src="images/tourist/sanbar.jpg" alt="townhall.jpg">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slideheader">Dive Adventures!</div>
+                        <div class="slideimage">
+                            <img src="images/tourist/underwater sto nino.png" alt="townhall.jpg">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <script>
+                    $("#slideshow > div:gt(0)").hide();
+                    setInterval(function() {
+                        $('#slideshow > div:first').fadeOut(500).next().fadeIn(500).end().appendTo('#slideshow');
+                    }, 5000);
+                </script>
+
+
+            </li>
+        </ul>
+    </section>
+
+
+
+    <!-- History -->
+    <section id="about">
+        <div class="inner-width ">
+            <h1 class="section-title ">About Bien Unido & Its History</h1>
+            <div class="time-line ">
+                <div class="block ">
+                    <h2>Bien Unido</h2>
+                    <h3>Municipality</h3>
+                    <p>
+                        Bien Unido, officially the Municipality of Bien Unido - is a 4th class municipality in the province of Bohol, Philippines. According to the 2015 census, it has a population of 27,115 people.
+                    </p>
+                </div>
+
+                <div class="block ">
+                    <h2>Barangay</h2>
+                    <h3>15 Barangays</h3>
+                    <p>Bien Unido comprises 15 barangays namely: Bilangbilangan Dako, Bilangbilangan Diot, Hingotanan East, Hingotanan West, Liberty, Malingin, Mandawa, Maomawan, Nueva Esperanza, Nueva Estrella, Pinamgo, Poblacion, Puerto San Pedro, Sagasa,
+                        and Tuboran</p>
+                </div>
+
+                <div class="block ">
+                    <h2>1935</h2>
+                    <h3>History</h3>
+                    <p>193"Bien Unido " is a Spanish phrase translating to "well united " in English. In 1935, two sitios in northern Trinidad were united into one barangay under an executive order and was given the name Bien Unido.</p>
+                </div>
+
+                <div class="block ">
+                    <h2>Economy</h2>
+                    <h3>Fishing & Seaweeds</h3>
+                    <p>
+                        Fishes caught are brought and sold in Cebu while mats have markets in Mindanao, Leyte and Cebu. Seaweed industry is recently the main livelihood in the municipality. The farmed seaweeds are used as essential ingredient for gel capsules, soap, toothpaste,
+                        slippers and other plastic wares.</p>
+                </div>
+
+                <div class="block ">
+                    <h2>1981 </h2>
+                    <h3>History</h3>
+                    <p>Bien Unido is the youngest municipality in Bohol being founded in 1981 after it was carved out and separated from the municipalities of Trinidad and Talibon.</p>
+                </div>
+
+                <div class="block ">
+                    <h2>Religion</h2>
+                    <h3>Catholic</h3>
+                    <p>The majority of the inhabitants of Bien Unido are Roman Catholics and much of their faith revolves around their church whose feast day falls on December 28 and advocated to the Holy Child Jesus or the Santo Niño.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Resorts -->
+    <section id="resorts" class="dark ">
+        <div class="inner-width ">
+            <h1 class="section-title ">Tourism: Beaches and Resort</h1>
+            <div class="works ">
+                <a href="images/tourist/sanbar1.jpg" class="work ">
+                    <img src="images/tourist/sanbar1.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>White Sandbar</h3>
+                        <div class="cat ">This White Sandbar can be found in Tuburan, Bien Unido, Bohol.</div>
+                    </div>
+                </a>
+
+                <a href="images/tourist/underwater sto nino.png " class="work ">
+                    <img src="images/tourist/underwater sto nino.png " alt=" ">
+                    <div class="info ">
+                        <h3>Underwater Sto. Niño Statue</h3>
+                        <div class="cat ">Wanna try diving underwater and pray to Sto. Niño? No worries, visit it here in Bien Unido!
+                        </div>
+                    </div>
+                </a>
+
+                <a href="images//tourist/island hopping.jpg" class="work ">
+                    <img src="images//tourist/island hopping.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>Island Hopping</h3>
+                        <div class="cat ">Try our Island Hopping Amazing Experience! </div>
+                    </div>
+                </a>
+
+                <a href="images/resorts/island front view resort.jpg" class="work ">
+                    <img src="images/resorts/island front view resort.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>Island Front View Resort</h3>
+                        <div class="cat ">Island Front View Lets you enjoy the amazing seas of Bien Unido.</div>
+                    </div>
+                </a>
+
+                <a href="images/tourist/hingotanan.jpg" class="work ">
+                    <img src="images/tourist/hingotanan.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>Hingotanan Island</h3>
+                        <div class="cat ">Hingotanan Island: The Small Paradise, Bien Unido, Philippines.</div>
+                    </div>
+                </a>
+
+                <a href="images/tourist/divecamp.png " class="work ">
+                    <img src="images/tourist/divecamp.png" alt=" ">
+                    <div class="info ">
+                        <h3>Dive Camp</h3>
+                        <div class="cat ">Set against the magnificent golden sunset of exceptional beauty. </div>
+                    </div>
+                </a>
+
+                <a href="images/tourist/playa bech.jpg" class="work ">
+                    <img src="images/tourist/playa bech.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>Playa Del Norte Beach Resort</h3>
+                        <div class="cat ">Enjoy bien Unido's blue sea at Playa resort along with its beautiful view.</div>
+                    </div>
+                </a>
+
+                <a href="images/tourist/Philippines_Maomawan Island1.jpg" class="work ">
+                    <img src="images/tourist/Philippines_Maomawan Island1.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>Maomawan Island</h3>
+                        <div class="cat ">Maomawan is one of the pocket islands of Bien Unido. They have the best variety of this specific crustacean species for food trips.</div>
+                    </div>
+                </a>
+
+                <a href="images/tourist/sagasa.jpg" class="work ">
+                    <img src="images/tourist/sagasa.jpg" alt=" ">
+                    <div class="info ">
+                        <h3>Sagasa Island</h3>
+                        <div class="cat ">Experience the serene view here in Sagasa Island, Bien Unido.</div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel -->
+    <section id="hotel" class="dark ">
+        <div class="inner-width ">
+            <h1 class="section-title ">Hotel and Inns</h1>
+            <div class="services ">
+                <div class="service ">
+                    <img src="images/resorts/jao bay resorts.jpg " alt=" " class="post-img ">
+                    <div class="post-content ">
+                        <h3>Jao Bay Resort</h3>
+                        <a href="# " style="text-decoration: none !important; color: black;">Spend your night stay at Bien Unido's nearby island inn- Jao Bay. Many tourist prefer to stay in Jao Bay resort, they say the nights  in there is peaceful. Peaceful night is good night sleep!</a>
+                    </div>
+                </div>
+
+                <div class="service ">
+                    <img src="images/resorts/Nichos islan resort.jpg " alt=" " class="post-img ">
+                    <div class="post-content ">
+                        <h3>Nichos Island Resort</h3>
+                        <a href="# " style="text-decoration: none !important; color: black;">Situated at Suba, jao Island. During your stay at Nichos Island Resort, you'll be close to Carlos P Garcia Park. Freebies such as free WiFi in public areas, plus a restaurant and a bar. This 3-star hotel has 5 rooms. </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="inner-width ">
+            <h1 class="section-title ">Get in touch</h1>
+            <div class="contact-info ">
+                <div class="item ">
+                    <i class="fas fa-mobile-alt "></i> +639 4512413211
+                </div>
+
+                <div class="item ">
+                    <i class="fas fa-envelope "></i> bienunido@gov.ph
+                </div>
+
+                <div class="item ">
+                    <i class="fas fa-map-marker-alt "></i> 6326 Bien Unido, Bohol
+                </div>
+            </div>
+
+            <form action="# " class="contact-form ">
+                <input type="text " class="nameZone " placeholder="Your Full Name ">
+                <input type="email " class="emailZone " placeholder="Your Email ">
+                <input type="text " class="subjectZone " placeholder="Subject ">
+                <textarea class="messageZone " placeholder="Message "></textarea>
+                <button type="submit " value="Send Message " class="btn ">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="inner-width ">
+            <div class="copyright ">
+                &copy; 2021| Created & Designed By
+                <a href="# ">Wib Kru</a>
+            </div>
+            <div class="sm ">
+                <a href="# " class="fab fa-facebook-f "></a>
+                <a href="# " class="fab fa-twitter "></a>
+                <a href="# " class="fab fa-instagram "></a>
+                <a href="# " class="fab fa-linkedin-in "></a>
+                <a href="# " class="fab fa-youtube "></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Go Top BTN -->
+    <button class="goTop fas fa-arrow-up "></button>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
