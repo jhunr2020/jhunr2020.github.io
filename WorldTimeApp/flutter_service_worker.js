@@ -3,9 +3,18 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "d10eb2e3bb18fe7aa50dacec3521b60d",
+  "assets/AssetManifest.json": "b079d1640ee569c3ab5f488aa7bf9358",
 "assets/assets/day.png": "9f36c150e5b0297e20411999d5e27627",
+"assets/assets/egypt.png": "a099e084c6fcccfa4032d58d17d63f27",
+"assets/assets/germany.png": "d3b68fc65e16a603702c8324f6196a7f",
+"assets/assets/greece.png": "d8c44c47741e348927cec7e3d64a22ca",
+"assets/assets/indonesia.png": "cb1239cc98b52f637175e17547c4c520",
+"assets/assets/kenya.png": "ec31c84f040e6a6a712081c3e38df4ac",
 "assets/assets/night.png": "f48bb8c2e3dc7a7544755506efb889b0",
+"assets/assets/ph.png": "7b6a648caaf19d73e647d379c784d3b2",
+"assets/assets/south_korea.png": "02ed96f645c463627f9bdfe1943adbba",
+"assets/assets/uk.png": "e316c8551496904bf2da00f0b4178da3",
+"assets/assets/usa.png": "16ebcdfdfefbbecc4bada8f40f19f99f",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/NOTICES": "62e81b64e95c06d3a6724cf33dff45d4",
@@ -13,9 +22,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "ab8600ecbb94ee805414818f47eeca4b",
-"/": "ab8600ecbb94ee805414818f47eeca4b",
-"main.dart.js": "7517c649a3256a8ff92c41496daa4fd8",
+"index.html": "47cc0498121c0a5d32bb261315efe526",
+"/": "47cc0498121c0a5d32bb261315efe526",
+"main.dart.js": "e1ddc9698290b4fa8be799a5a2e0ccc1",
 "manifest.json": "0536a2d9623a97ce9525f08e4abd9ed4",
 "version.json": "a9851116ebcede990c03f07b539c7ace"
 };
