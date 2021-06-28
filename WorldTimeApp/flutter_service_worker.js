@@ -3,6 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
+<<<<<<< HEAD
   "assets/AssetManifest.json": "b079d1640ee569c3ab5f488aa7bf9358",
 "assets/assets/day.png": "9f36c150e5b0297e20411999d5e27627",
 "assets/assets/egypt.png": "a099e084c6fcccfa4032d58d17d63f27",
@@ -15,6 +16,9 @@ const RESOURCES = {
 "assets/assets/south_korea.png": "02ed96f645c463627f9bdfe1943adbba",
 "assets/assets/uk.png": "e316c8551496904bf2da00f0b4178da3",
 "assets/assets/usa.png": "16ebcdfdfefbbecc4bada8f40f19f99f",
+=======
+  "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
+>>>>>>> parent of 9e5840b (d)
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/NOTICES": "62e81b64e95c06d3a6724cf33dff45d4",
@@ -22,9 +26,15 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+<<<<<<< HEAD
 "index.html": "47cc0498121c0a5d32bb261315efe526",
 "/": "47cc0498121c0a5d32bb261315efe526",
 "main.dart.js": "e1ddc9698290b4fa8be799a5a2e0ccc1",
+=======
+"index.html": "840144a5235d08e2e08b7d4df727b0c2",
+"/": "840144a5235d08e2e08b7d4df727b0c2",
+"main.dart.js": "e3ef05f1763c88dd1a323f840bbddc76",
+>>>>>>> parent of 9e5840b (d)
 "manifest.json": "0536a2d9623a97ce9525f08e4abd9ed4",
 "version.json": "a9851116ebcede990c03f07b539c7ace"
 };
